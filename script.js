@@ -66,7 +66,7 @@ window.onload = function() {
         var len_donkey = donkey.length;
         var ran = Math.floor(Math.random()*len_donkey);
         var opened = donkey[ran]
-        setTimeout(() => { document.getElementById(opened).src = 'openDoor.png'; }, 2000);
+        document.getElementById(opened).src = 'openDoor.png';
         document.getElementById('game').appendChild(document.createTextNode(" Dare to switch? Click an appropriate door to continue."))
         var switch_door_name = a.filter(function(d){
                     var cc = d!=a[p-1] //can't be the initial door picked. 
